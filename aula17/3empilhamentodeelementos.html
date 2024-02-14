@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Empilhamento de elementos</title>
+</head>
+<body>
+    <div class="container my-3 hstack gap-sm-3">
+        <div class="p-5 bg-primary "></div>
+        <div class="vr"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="vr"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+    
+    <div class="container my-3">
+        <div class="p-5 bg-primary position-absolute "></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+    <hr>
+    <div class="container my-3">
+        <div class="p-5 bg-primary"></div>
+        <div class="p-5 bg-success position-fixed bottom-0 start-0 end-0"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+
+
+</body>
+</html>
