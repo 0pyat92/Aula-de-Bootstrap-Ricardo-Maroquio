@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Campos de checagem</title>
+</head>
+<body>
+    <div class="container p-5">
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="novo">
+            <label for="novo" class="form-check-label">Produto novo</label>
+        </div>
+        <hr>
+        <div class=" form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="novo" name="estado" value="n">
+            <label for="novo" class="form-check-label">Produto novo</label>
+        </div>
+        <div class="form-check form-check-inline ">
+            <input type="radio" class="form-check-input" id="novo" name="estado" value="u">
+            <label for="novo" class="form-check-label">Produto usado</label>
+        </div>
+        <hr>
+        <div class="m-3 form-check form-check-reverse">
+            <input type="radio" class="form-check-input" id="novo" name="estado" value="n">
+            <label for="novo" class="form-check-label">Produto novo</label>
+        </div>
+        <div class="m-3 form-check form-check-reverse ">
+            <input type="radio" class="form-check-input" id="novo" name="estado" value="u">
+            <label for="novo" class="form-check-label">Produto usado</label>
+        </div>
+        <hr>
+        <div class="mb-3 form-switch">
+            <input type="checkbox" class="form-check-input" id="novo">
+            <label for="novo" class="form-check-label">Produto novo</label>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <input type="radio" class="btn-check" name="tipodeentrega" id="entregarapida">
+            <label for="entregarapida" class="btn btn-outline-primary">Entrega rápida</label>
+        </div>
+        <div class="mb-3">
+            <input type="radio" class="btn-check" name="tipodeentrega" id="entregalenta">
+            <label for="entregalenta" class="btn btn-outline-primary">Entrega lenta</label></div>    
+        </div>    
+    </div>
+        
+    
+</body>
+</html>
