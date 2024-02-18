@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Complementos de Campos de Formularios</title>
+</head>
+<body>
+    <div class="container p-5">
+        <div class="mb-3 input-group">
+            <label for="nome" class="input-group-text">Nome Completo</label>
+            <input class="form-control" type="text" id="nome">
+        </div>
+        
+        <div class="mb-3 input-group">
+            <label for="nome1" class="input-group-text">R$</label>
+            <input class="form-control text-end" type="text" id="nome1">
+            <label for="nome1" class="input-group-text">,00</label>
+        </div>
+      
+        <div class="mb-3 input-group">
+            <input class="form-control text-end" type="text" id="nome3">
+            <label for="nome3" class="input-group-text">@</label>
+            <input class="form-control" type="text" id="nome3">
+        </div>
+
+        <div class="mb-3 input-group">
+            <label for="nome4" class="input-group-text">Mensagem</label>
+            <textarea  id="name4"  class="form-control"></textarea>            
+        </div>
+
+        <div class="mb-3 input-group">
+            <div class="input-group-text">
+                <input class="mt-0 form-check-input" type="checkbox">
+            </div>
+            <input class="form-control" type="text">
+        </div>
+
+        <div class="mb-3 input-group">
+            <span class="input-group-text">Nome Completo</span>
+            <input class="form-control text-start" type="text" placeholder="Primeiro Nome" >
+            <input class="form-control" type="text" placeholder="Segundo Nome">
+        </div>
+        <div class="mb-3 input-group">
+            <span class="input-group-text">$</span>
+            <sapn class="input-group-text">BRL</sapn>
+            <inpt class="form-control text-end"></inpt>
+        </div>
+
+        <div class="mb-3 input-group">
+            <input class="form-control" type="search" placeholder="Escreva aqui">
+            <button class="btn btn-outline-secondary">Buscar</button>
+        </div>
+
+    </div>
+</body>
+</html>
