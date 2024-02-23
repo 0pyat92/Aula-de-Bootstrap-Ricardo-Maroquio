@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Validação de formularios</title>
+</head>
+<body>
+    <div class="p-5 m-5">
+        <h1 class="display-3">Endereço</h1>
+                <hr>
+                <form method="post" class="needs-validation" novalidate>
+                    <div class="row mb-3 g-3">
+                        <div class="col-7">
+                            <label for="logradouro" class="form-label">Logradouro</label>
+                            <input type="text" class="form-control" id="logradouro" required>
+                            <div class="invalid-feedback">
+                                Você deve informar o Logradouro
+                            </div>
+                            <div class="valid-feedback">
+                                Logradouro informado corretamente
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <label for="Numero" class="form-label">Numero</label>
+                            <input type="text" class="form-control" id="Numero">
+                        </div>
+                        <div class="col-3">
+                            <label for="complemento" class="form-label">Complemento</label>
+                            <input type="text" class="form-control" id="complemento">
+                        </div>
+                        <div class="col-6">
+                            <label for="Bairro" class="form-label">Bairro</label>
+                            <input type="text" class="form-control" id="Bairro">
+                        </div>
+                        <div class="col-6">
+                            <label for="Cidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="Cidade">
+                        </div>
+                        <div class="col-6">
+                            <label for="Estado" class="form-label">Estado</label>
+                            <input type="text" class="form-control" id="Estado">
+                        </div>
+                        <div class="col-2">
+                            <label for="Cep" class="form-label">Cep</label>
+                            <input type="text" class="form-control" id="Cep" pattern="[0-9]{8}" required>
+                            <div class="invalid-feedback">
+                                Você deve informar o Cep
+                            </div>
+                            <div class="valid-feedback">
+                                Cep informado corretamente
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="termos"></input>
+                            <label for="termos" class="form-check-label">Concordo com os termos e condições</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-4">Cadastrar</button>
+                    
+                </form>
+    </div>
+
+    <script>
+        (() => {
+
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+</body>
+</html>
