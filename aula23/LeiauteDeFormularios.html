@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"defer></script>
-    <title>Leiaute de Formularios</title>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Leiaute de formularios</title>
 </head>
 <body>
     <div class="container p-5">
@@ -17,57 +17,56 @@
                 <input type="text" class="form-control" placeholder="Campo 2">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Campo 3">
+                <input type="text" class="form-control" placeholder="Campo 2">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Campo 4">
+                <input type="text" class="form-control" placeholder="Campo 2">
             </div>
+            <hr>
+            <div class="row mb-3">
+                <label for="email" class="col-form-label col-4 text-end">E-mail</label>
+                    <div class="col-8">
+                        <input type="email" name="" class="form-control" id="email">
+                    </div>
+                </div>
+                <hr>
+                <h1 class="display-3">Endereço</h1>
+                <hr>
+                <form>
+                    <div class="row mb-3 g-3">
+                        <div class="col-7">
+                            <label for="logradouro" class="form-label">Logradouro</label>
+                            <input type="text" class="form-control" id="logradouro">
+                        </div>
+                        <div class="col-2">
+                            <label for="Numero" class="form-label">Numero</label>
+                            <input type="text" class="form-control" id="Numero">
+                        </div>
+                        <div class="col-3">
+                            <label for="complemento" class="form-label">Complemento</label>
+                            <input type="text" class="form-control" id="complemento">
+                        </div>
+                        <div class="col-6">
+                            <label for="Bairro" class="form-label">Bairro</label>
+                            <input type="text" class="form-control" id="Bairro">
+                        </div>
+                        <div class="col-6">
+                            <label for="Cidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="Cidade">
+                        </div>
+                        <div class="col-6">
+                            <label for="Estado" class="form-label">Estado</label>
+                            <input type="text" class="form-control" id="Estado">
+                        </div>
+                        <div class="col-2">
+                            <label for="Cep" class="form-label">Cep</label>
+                            <input type="text" class="form-control" id="Cep">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Cadastrar</button>
+                    
+                </form>
         </div>
-        <hr>
-        <div class="row mb-3">
-            <label for="email" class="col-form-label col-3 ">E-mail</label>
-            <div class="col-9">
-                <input type="email" class="form-control" id="email">
-            </div>
-        </div>
-        <hr>
-        <h3>Endereço</h3>
-        <hr>
-        <form>
-            <div class="row mb-3 g-2">
-                <div class="col-7">
-                    <label for="logradouro" class="form-label">Logradouro</label>
-                    <input type="text" class="form-control" id="logradouro">
-                </div>
-                <div class="col-2">
-                    <label for="Numero" class="form-label">Numero</label>
-                    <input type="text" class="form-control" id="Numero">
-                </div>
-                <div class="col-3">
-                    <label for="complemento" class="form-label">Complemento</label>
-                    <input type="text" class="form-control" id="complemento">
-                </div>
-                <div class="col-6">
-                    <label for="bairro" class="form-label">Bairro</label>
-                    <input type="text" class="form-control" id="bairro">
-                </div>
-                <div class="col-6">
-                    <label for="cidade" class="form-label">cidade</label>
-                    <input type="text" class="form-control" id="cidade">
-                </div>
-                <div class="col-6">
-                    <label for="estado" class="form-label">Estado</label>
-                    <input type="text" class="form-control" id="estado">
-                </div>
-                <div class="col-2">
-                    <label for="cep" class="form-label">CEP</label>
-                    <input type="text" class="form-control" id="cep">
-                </div>
-
-            </div>
-        </form>
-        <button class="btn btn-primary">Cadastrar</button>
-        <hr>
     </div>
 </body>
 </html>
