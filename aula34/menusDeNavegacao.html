@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Menus de Navegação</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h1>Componente Nav</h1>
+        <hr>
+        <ul class="nav nav-pills nav-fill  ">
+            <li class="nav-item">
+                <a href="#1" class="nav-link active ">Ativo</a>
+            </li>
+            <li class="nav-item">
+                <a href="#2" class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a href="#3" class="nav-link">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="#4" class="nav-link disabled ">Desabilitado</a>
+            </li>
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">Submenus</a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#1" class="dropdown-item ">submenu 1</a>
+                </li>
+                <li>
+                    <a href="#2" class="dropdown-item ">submenu 2</a>
+                </li>
+                <li>
+                    <a href="#3" class="dropdown-item ">submenu 3</a>
+                </li>
+                <hr class="dropdown-divider">
+                <li>
+                    <a href="#4" class="dropdown-item ">submenu 4</a>
+                </li>
+            </ul>
+
+        </ul>
+    </div>
+</body>
+</html>
